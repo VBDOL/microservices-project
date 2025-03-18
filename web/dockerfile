@@ -1,0 +1,5 @@
+FROM php:8.1-fpm
+RUN docker-php-ext-install mysqli
+COPY index.php /var/www/html/index.php
+COPY nginx.conf /etc/nginx/nginx.conf
+CMD ["php-fpm"]
