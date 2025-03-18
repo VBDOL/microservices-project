@@ -22,7 +22,7 @@ microservices-project/
 └── README.md              # Documentação do projeto
 
 ````
-** Tecnologias Utilizadas
+## Tecnologias Utilizadas
 Docker: Para criar e gerenciar contêineres.
 
 PHP: Utilizado como linguagem backend para manipulação dos dados.
@@ -33,7 +33,7 @@ MySQL: Banco de dados relacional para armazenamento das informações.
 
 Docker Compose: Para orquestrar os contêineres e simplificar a execução.
 
-Pré-requisitos
+## Pré-requisitos
 Antes de começar, certifique-se de ter instalado:
 
 Docker (versão 20.x ou superior)
@@ -42,7 +42,7 @@ Docker Compose (versão 1.29 ou superior)
 
 Além disso, conhecimentos básicos em Linux, Docker e AWS são recomendados para melhorias ou implantação em ambientes de produção.
 
-Como Executar o Projeto
+## Como Executar o Projeto
 Clone o repositório:
 
 bash
@@ -63,20 +63,20 @@ PHP é usado para inserir registros aleatórios na tabela dados no banco de dado
 
 O NGINX serve como proxy reverso e entrega as páginas do serviço.
 
-Banco de Dados
+## Banco de Dados
 O MySQL é configurado com credenciais padrão e inicializado automaticamente com o script banco.sql, que cria a tabela necessária.
 
-Orquestração
+## Orquestração
 O Docker Compose gerencia os dois serviços, garantindo que o banco de dados seja inicializado antes do serviço web.
 
-Funcionalidades
+## Funcionalidades
 Inserção Dinâmica: Registros são criados dinamicamente no banco de dados para cada acesso ao serviço web.
 
 Configuração Personalizada: NGINX configurado para suportar PHP-FPM.
 
 Fácil Implantação: Com apenas um comando, todos os serviços são provisionados.
 
-Melhorias Futuras
+## Melhorias Futuras
 Segurança:
 
 Substituir credenciais estáticas por variáveis de ambiente.
